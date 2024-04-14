@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inclusive+Sans&display=swap');
+
+body {
+  font-family: "EB Garamond", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mainVideo video {
+  width: 100%;
+}
+
+.offcanvas li {
+padding: 8px;
+}
+
+.offcanvas ul li a {
+  font-family: "EB Garamond", serif;
+}
+
+.logoImg img {
+  width: 80px;
+}
+
+.text-information {
+  width: 300px;
+  height: 100px;
+  border: 3px solid white;
+  background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11)), 1));
+  margin-bottom: 20px;
+  display: grid;
+  align-items: center;
+  color: #ffff;
+  font-family: "EB Garamond", serif;
+  overflow: hidden;
+}
+
+.col-md-2,
+.col-md-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.img-100 {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  border: 1px solid rgb(89, 88, 88);
+}
+
+.hover-image {
+  width: 15vw;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image img:hover {
+  opacity: 0.75;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.socials img {
+  border-radius: 0px;
+  width: 35px;
+  display: block;
+  padding-top: 10px;
+}
+
+.allVideo {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contVideo video {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.contVideo img {
+  width: 100%;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.contVideo img:hover {
+  opacity: 0.5;
+}
+
+.colContain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-left a {
+  color: black;
+  text-decoration: none;
+}
+
+.col-right img {
+  width: 40px;
+}
+
+h2 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  font-family: "EB Garamond", serif;
+}
+
+h1,
+p,
+a {
+  font-family: "EB Garamond", serif;
+}
+
+.hover-image.hovered {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.about-container {
+  width: 45%;
+}
+
+.about-container img {
+  width: 80%;
+  border-radius: 100%;
+}
+
+.about-text {
+  width: 45%;
+}
+
+.container-header img {
+  width: 100%;
+  max-height: 30vh;
+}
+
+.container-header video {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.leftImages,
+.rightImages {
+  display: grid;
+  width: 35%;
+  justify-content: center;
+}
+
+.leftImages img,
+.rightImages img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.containerVideos,
+.containerReels {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.widthVideos {
+  width: 99%;
+}
+
+@media screen and (max-width: 992px) {
+  .mainVideo video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .hover-image {
+    display: none;
+  }
+
+  .text-information {
+    width: 380px;
+    height: 100px;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .offcanvas {
+    height: 100vh;
+  }
+
+  .offcanvas ul {
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 3%;
+    display: grid;
+    min-height: 40%;
+    padding: 10px;
+  }
+
+  .offcanvas li {
+    margin: 10px 0px;
+    text-align: center;
+    width: 250px;
+    border: 1px solid rgb(152, 152, 152);
+  }
+
+  .offcanvas li:hover {
+    background-color: rgb(217, 217, 217);
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .mainVideo video {
+    height: 30vh;
+  }
+
+  .custom-col-width {
+    width: 25% !important;
+  }
+
+  .colContain {
+    display: block;
+  }
+
+  .offcanvas {
+    max-width: 300px;
+  }
+
+  .space {
+    display: block;
+  }
+
+  .about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container-header video {
+    height: 20vh;
+  }
+
+  .containerReels {
+    max-width: 510px;
+  }
+
+  .text-information {
+    width: 60vw;
+    margin-bottom: 20%;
+  }
+
+  .allVideo {
+    display: grid;
+    justify-content: center;
+  }
+
+  .allVideo video {
+    width: 400px;
+  }
+
+  .colContain {
+    display: block;
+  }
+
+  .offcanvas {
+    max-width: 200px;
+  }
+
+  .rightImages {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .leftImages {
+    width: 100%;
+  }
+}

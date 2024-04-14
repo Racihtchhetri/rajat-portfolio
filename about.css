@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inclusive+Sans&display=swap');
+    
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+}
+
+.offcanvas li {
+  padding: 8px;
+}
+
+.offcanvas ul li a {
+  font-family: "EB Garamond", serif;
+}
+
+.logoImg img {
+  width: 80px;
+}
+
+    .space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.about-container {
+  width: 45%;
+}
+
+.about-container img {
+  width: 80%;
+  border-radius: 100%;
+}
+
+.about-text {
+  width: 45%;
+}
+
+
+.colContain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-left a {
+  color: black;
+  text-decoration: none;
+}
+
+.col-right img {
+  width: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .mainVideo video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .image-container img {
+    display: none;
+  }
+
+  .text-information {
+    width: 380px;
+    height: 100px;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .offcanvas {
+    height: 100vh;
+  }
+
+  .offcanvas ul {
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 3%;
+    display: grid;
+    min-height: 40%;
+    padding: 10px;
+  }
+
+  .offcanvas li {
+    margin: 10px 0px;
+    text-align: center;
+    width: 250px;
+    border: 1px solid rgb(152, 152, 152);
+  }
+
+  .offcanvas li:hover {
+    background-color: rgb(217, 217, 217);
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .mainVideo video {
+    height: 30vh;
+  }
+
+  .custom-col-width {
+    width: 20% !important;
+  }
+
+  .colContain {
+    display: block;
+  }
+
+  .offcanvas {
+    max-width: 300px;
+    /* Adjust the width as per your preference */
+  }
+
+  .space {
+    display: block;
+  }
+
+  .about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container-header video{
+    height: 20vh;
+  }
+.containerReels{
+  max-width: 510px;
+}
+  .text-information {
+    width: 60vw;
+    margin-bottom: 20%;
+  }
+  .allVideo {
+    display: grid;
+    justify-content: center;
+  }
+
+  .allVideo video {
+    width: 400px;
+
+  }
+
+  .colContain {
+    display: block;
+  }
+
+  .offcanvas {
+    max-width: 200px;
+    /* Adjust the width as per your preference */
+  }
+
+  .rightImages {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .leftImages {
+    width: 100%;
+  }
+}

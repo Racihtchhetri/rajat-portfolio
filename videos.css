@@ -237,6 +237,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.containerVideos video{
+  cursor: pointer;
+}
 .containerReels {
   margin: auto;
   max-width: 1200px;
@@ -245,6 +248,9 @@ a {
 }
 .widthVideos{
   width: 99%;
+}
+.containerReels video{
+  cursor: pointer;
 }
 
 

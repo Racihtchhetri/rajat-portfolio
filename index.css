@@ -272,6 +272,11 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+
+  .offcanvas li {
+    width: 140px;
+  }
+
   .container-header video {
     height: 20vh;
   }
